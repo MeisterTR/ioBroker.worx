@@ -85,6 +85,7 @@ class Worx extends utils.Adapter {
             val: false,
             ack: true
         });
+        /*
         const WorxCloud = new worx(this.config.mail, this.config.password);
 
         WorxCloud.on('connect', worxc => {
@@ -128,7 +129,7 @@ class Worx extends utils.Adapter {
                 ack: true
             });
         });
-
+    */
         // in this template all states changes inside the adapters namespace are subscribed
         this.subscribeStates('*');
 
