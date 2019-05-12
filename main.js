@@ -162,6 +162,7 @@ class Worx extends utils.Adapter {
         this.log.info('check group user admin group admin: ' + result);
 
     }
+    /*
     setStates(mowerSerial, data) {
         let that = this;
         //mower set states
@@ -372,9 +373,12 @@ class Worx extends utils.Adapter {
             })
         }
     }
+    /*
+
     /**
      * @param {{ serial: string; raw: { name: string; }; }} mower
      */
+    /*
     async createDevices(mower) {
         let that = this;
         await that.setObjectNotExistsAsync(mower.serial, {
@@ -900,6 +904,7 @@ class Worx extends utils.Adapter {
         return "ready";
 
     }
+    */
 
 
     /**
