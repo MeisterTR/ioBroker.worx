@@ -92,6 +92,7 @@ class Worx extends utils.Adapter {
         });
 
         let that = this
+        /*
         WorxCloud.on('found', function (mower) {
 
             that.log.info('found!' + JSON.stringify(mower));
@@ -124,7 +125,7 @@ class Worx extends utils.Adapter {
                 ack: true
             });
         });
-
+*/
         // in this template all states changes inside the adapters namespace are subscribed
         this.subscribeStates('*');
 
