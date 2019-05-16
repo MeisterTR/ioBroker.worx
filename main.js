@@ -82,7 +82,7 @@ class Worx extends utils.Adapter {
             ack: true
         });
         const WorxCloud = new worx(this.config.mail, this.config.password);
-
+        /*
         WorxCloud.on('connect', worxc => {
             this.log.info('sucess conect!');
             this.setStateAsync('info.connection', {
@@ -92,7 +92,7 @@ class Worx extends utils.Adapter {
         });
 
         let that = this
-        /*
+        
         WorxCloud.on('found', function (mower) {
 
             that.log.info('found!' + JSON.stringify(mower));
@@ -149,14 +149,6 @@ class Worx extends utils.Adapter {
             ack: true,
             expire: 30
         });
-
-        // examples for the checkPassword/checkGroup functions
-        let result = await this.checkPasswordAsync('admin', 'iobroker');
-        this.log.info('check user admin pw ioboker: ' + result);
-
-        result = await this.checkGroupAsync('admin', 'admin');
-        this.log.info('check group user admin group admin: ' + result);
-
     }
     setStates(mowerSerial, data) {
         let that = this;
