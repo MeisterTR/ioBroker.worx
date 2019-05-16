@@ -82,7 +82,7 @@ class Worx extends utils.Adapter {
             ack: true
         });
         const WorxCloud = new worx(this.config.mail, this.config.password);
-        /*
+        
         WorxCloud.on('connect', worxc => {
             this.log.info('sucess conect!');
             this.setStateAsync('info.connection', {
@@ -90,9 +90,16 @@ class Worx extends utils.Adapter {
                 ack: true
             });
         });
+        WorxCloud.on('error', worxc => {
+            this.log.info('Error');
+            this.setStateAsync('info.connection', {
+                val: false,
+                ack: true
+            });
+        });
 
         let that = this
-        
+        /*
         WorxCloud.on('found', function (mower) {
 
             that.log.info('found!' + JSON.stringify(mower));
