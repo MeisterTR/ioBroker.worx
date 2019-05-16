@@ -146,12 +146,6 @@ class Worx extends utils.Adapter {
         });
 
         // same thing, but the state is deleted after 30s (getState will return null afterwards)
-        await this.setStateAsync('info.connection', {
-            val: true,
-            ack: true,
-            expire: 30
-        });
-
     }
 
 	/**
