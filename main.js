@@ -81,6 +81,7 @@ class Worx extends utils.Adapter {
             val: false,
             ack: true
         });
+        /*
         const WorxCloud = new worx(this.config.mail, this.config.password);
         
         WorxCloud.on('connect', worxc => {
@@ -99,7 +100,7 @@ class Worx extends utils.Adapter {
         });
 
         let that = this
-        /*
+        
         WorxCloud.on('found', function (mower) {
 
             that.log.info('found!' + JSON.stringify(mower));
