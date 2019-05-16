@@ -136,11 +136,11 @@ class Worx extends utils.Adapter {
         // in this template all states changes inside the adapters namespace are subscribed
         this.subscribeStates('*');
 
-        await this.setStateAsync('info.connection', true);
+        this.setStateAsync('info.connection', true);
 
         // same thing, but the value is flagged "ack"
         // ack should be always set to true if the value is received from or acknowledged from the target system
-        await this.setStateAsync('info.connection', {
+        this.setStateAsync('info.connection', {
             val: true,
             ack: true
         });
