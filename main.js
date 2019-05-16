@@ -8,7 +8,7 @@
 // you need to create an adapter
 const utils = require("@iobroker/adapter-core");
 
-const worx = require(__dirname + '/lib/api');
+//const worx = require(__dirname + '/lib/api');
 const week = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'];
 const ERRORCODES = {
     0: 'No error',
